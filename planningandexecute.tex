@@ -1,0 +1,203 @@
+
+\documentclass{llncs}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\pagestyle{plain}
+%
+\begin{document}
+
+
+\title{Model driven Engineering en Cloud Computing. Mapeo sistemático de la literatura}
+
+\author{Néstor Valdez, Monica Fatecha}
+\institute{Facultad de Ciencias y Tecnología, Universidad Católica Nuestra Señora de la Asunción}
+\maketitle
+
+
+\section{Introducción}\label{sec:Introduction}
+\section{Planeamiento del SMS}\label{sec:Planning}
+En este apartado se muestran todas las tareas realizadas para la planificación. Se toma como base las guías propuestas por
+Kitchenham\cite{slr}, pero se toma en cuenta que las guías estan mas bien basadas en una SLR.
+\subsection{Identificar la necesidad de la revisión}
+Se han buscado mapeos sistemáticos en el contexto de la ingeniería dirigida por modelos (MDE) y Cloud Computing, no obteniendo
+resultados, siendo esta una de las razones que nos lleva a realizar un SMS sobre el tema en cuestión.
+
+El objetivo de este SMS es no sólo presentar trabajos existentes, sino también mostrar la proyección que tendra MDE con Cloud computing
+en el futuro.
+\subsection{Formular las preguntas de investigación}
+Las preguntas de investigacion y las motivaciones de las mismas, estan definidas en la Tabla 1.
+
+\subsection{Antecedentes}
+La ingenieria dirigida por modelos (MDE) se está convirtiendo en el software dominante para especificar,
+desarrollar y mantener software. En MDE, los modelos son los protagonistas principales en el proceso
+de ingenieria y son usados en varios niveles implementativos.
+Al mismo tiempo, Software as a Service (Saas), está ganando popularidad como una forma estandar para el diseño
+e implementación de aplicaciones de software.
+
+
+
+\begin{tabular}{  | p{5cm} | p{7cm}  | }
+  \hline
+  \multicolumn{2}{|c|}{\bf Tabla 1} \\
+  \hline
+  \bf Pregunta & \bf Motivación \\
+  \hline
+  P1. Qué podría aportar?  & Descubrir qué tipo de aportes daría MDE en cloud computing y evaluar el resultado de forma general\\
+  \hline
+  P2. Actualmente que aportes brinda MDE a Cloud Computing? & Investigar cuales son los estudios o investigaciones presentes en la actualidad, analizar e identificar si se pueden extender dichas investigaciones\\
+  \hline
+  P3. Que iniciativas se estan tomando? & Evaluar MasS. Su viabilidad y permanencia en el tiempo\\
+  \hline
+  P4. Qué proyección tiene la iniciativa Modeling As a Service? & Identificar cómo puede mejorar la nube con esta implementación y estudiar esas mejoras\\
+  \hline
+  P5. Cómo las tecnicas de MDE pueden aportar mejor performance en Cloud Computing?  & Evaluar los factores que podrían afectar en la economía de la nube al implementar MDE\\
+  \hline
+  P6. Cómo MDE podriá afectar la economia de la nube y que nuevos negocios podría atraer? & Realizar una investigación de cuáles son los beneficios que puede ofrecer MDE en la nube, en este caso si se pueden generar nuevas formas de negocio\\
+  \hline
+\end{tabular}
+
+\subsection{Estrategia de Busqueda}
+Realizar la busqueda automatica  en el periodo comprendido entre 2009 y 2016 y en las siguientes fuentes: IEEE XPLORE en el area de computing and processing, SCOPUS en el area de Computer Science, Web of Science.
+
+La seleccion realizada sobre los terminos principales, sinónimos, palabras alternativas o terminos relacionados con los terminos principales se presentan en la Tabla 2. Buscamos publicaciones en ingles ya que es el idioma universal en el campo de la investigación.\\ \\
+\begin{tabular}{  | p{5cm} | p{7cm}  | }
+  \hline
+  \multicolumn{2}{|c|}{\bf Tabla 2} \\
+  \hline
+  \bf Terminos principales & \bf Terminos alternativos \\
+  \hline
+    MDE & mde OR Model Driven Engineering OR model driven OR model driven OR model as a service OR modeling as a service OR mass\\
+   \hline
+    Implementation & implementation OR implement OR implementing OR with OR aplication OR use OR utilization\\
+   \hline
+   Cloud Computing & cloud computing OR  cloud OR cloud c\\
+   \hline
+\end{tabular}\\ \\
+\pagebreak
+
+La cadena de busqueda definida a partir de la Tabla 2 es la siguiente: \\
+"( mde OR Model Driven Engineering OR model driven OR model driven OR model as a service OR modeling as a service OR mass)AND( implementation OR implement OR implementing OR with OR aplication OR use OR utilization)AND( cloud computing OR  cloud OR cloud c)"
+
+La cadena de búsqueda  se aplicara en las fuentes indicadas, buscando en el título y en el resumen, en caso de que el buscador acepte y si no buscará en el texto completo.\\ \\
+Todas las decisiones tomadas durante la definición de la cadena de búsqueda se tomaron conjuntamente entre los autores.
+
+\subsection{Criterios de selección de estudios}
+Se incluiran en ingles los artículos que se refieran a la implementacion del cloud computing con MDE y publicados entre 2009 y 2016 en revistas y conferencias, congresos o talleres, tambien se tomaran los terminos relevantes que aparezcan en el abstract.\\\\
+Se excluiran tipos de articulos de depate, o en forma de resumen o de presentacion, cuya contribucion no se relacione con la implementacion de MDE con cloud computing y tambien se excluiran articulos relacionados a la relacion de cloud computing con otros modelos o metodos.
+
+\subsection{Procedimiento para la selección de estudios}
+Para seleccionar los estudios primarios se aplicarán los criterios de inclusión/exclusión leyendo los artículos de revistas, de conferencia o workshops encontrados.Si tras leer el resumen todavia quedan dudas sobre la inclusión/exclusión de algun articulo se leera el artículo completo.\\ \\
+La selección de estudios la realizará el primer autor del trabajo y la segunda autora seleccionará un porcentaje no mayor al 40  \% de los artículos  para verificar si los criterios de inclusión/exclusión se aplicarion correctamente.
+
+\subsection{Lista de comprobación y procedimiento para la evaluación de la calidad de los estudios}
+Como criterio para considerar artículos de cierta calidad, se consideró seleccionar estudios en coferencias, cogresos o talleres de prestigio con revisión de pares.
+
+\subsection{Estrategia para extracción de los datos}
+Para la estracción de datos, mencionamos dos partes, la primera con los datos de cada estudio: autores, tipo de publicación, etc. Y la segunda parte que contiene las propiedades del esquema definido para clasificar los estudios que se seleccionó.\\ \\
+
+%\begin{tabular}{  | p{5cm} | p{7cm}  | }
+%  \hline
+%  \multicolumn{2}{|c|}{\bf Tabla 3} \\
+%  \hline
+%  \bf Dimensiones & \bf Categorias \\
+%  \hline
+%   Tipo de aportes futuros & \\
+%  \hline
+%   Tipo de aportes actuales & \\
+%  \hline
+%   Iniciativas & \\
+%   \hline
+%   Iniciativas en el tema MasS & \\
+%   \hline
+%    Tipo de tecnicas & \\
+%   \hline
+%    Negocios y impacto economico & \\
+%    \hline
+%\end{tabular}
+\subsection{Síntesis de los datos extraídos}
+
+Se realizará una síntesis cuantitativa considerando el numero de articulos en cada dimensio/categoria, mostrando a través de tablas y/o graficos, para responder a cada pregunta de investigación.
+También se analizará numero de publicaciones por año y tipo de publicación para detectar y justificar tendencias y orientar a futuros investigadores sobre los foros más apropiados en los que se puede buscar información en temas relacionados con MDE con cloud computing.
+
+\subsection{Realizar la revisión}
+Este SMS se llevó a cabo en una fase, se localizaron artículos encontrados entre 2010 y 2016. La cronología del proceso para la realización de este SMS se muestra en la Tabla 4. \\
+\begin{tabular}{  | p{2cm} | p{3cm}  |  p{3cm} | p{3cm} |}
+  \hline
+  \multicolumn{4}{|c|}{\bf Tabla 3} \\
+  \hline
+  \bf Fecha  & \bf Planificar & \bf Realizar & \bf Resultado \\
+  \hline
+   2 de Noviembre  & definición del tema & & implementación con cloud computing\\
+  \hline
+   7 y 8 de Noviembre &  & identificación de la literatura relevante & lista de los articulos encontrados en cada fuente de busqueda.(8 articulos)\\
+   \hline
+    12 de Noviembre  & & seleccion de estudios primarios leyendo resumenes & lista con datos de los articulos seleccionados (5 articulos)\\
+    \hline
+     15 de Noviembre & & seleccion de estudios y extraccion de datos leyendo el texto & lista de la extracción de datos. (4 articulos) \\
+    \hline
+ \end{tabular}
+
+
+
+\subsection{Identificar y seleccionar los estudios primarios}
+Se encontraron 15 articulos entre los años 2012 y 2016, aplicando la estrategia de búsqueda definida en el protocolo. Debido a la limitación que ofrecen ciertas fuentes de búsqueda, en el caso que no permitieran usar cadenas de búsqueda complejas, se tuvieron que crear cadenas específicas para cada fuente y manipular los resultados de las búsquedas para obtener los mismos resultados que pudieran haber sido obtenidos utilizando la cadena de búsqueda original. La búsqueda se hizo en el título.\\
+Para cada fuente de búsqueda se guardaron: las cadenas de búsqueda, los metadatos de los articulos encontrados y resumenes.\\
+Después de leer los resumenes de los artículos y excluir los que no tenían nada que ver con MDE con cloud computing, solo quedaron 10, no habia duplicados.A continuación se aplicaron los criterios de inclusión/exclusión a los articulos restantes, leyendo el texto completo. Se excluyeron articulos que se referian a cloud computing y la implementación con otro metodo.\\
+Como se planificó en el protocolo, la identificación y la selección de estudios primarios lo realizó el primer autor del artículo, y la segunda autora escogió el 40 \% de los artículos para la corrección.Las dudas que surgieron durante la selección se resolvieron entre los dos autores.\\ \\ \\
+
+\subsubsection{Extracción de datos}
+Primero se comenzó a extraer los metadatos y clasificar los 10 articulos seleccionados, leyendo el texto completo. Para la clasificación se utilizó el esquema de clasificación presentado en la Tabla 2. Se decidió excluir 2 articulos quedando así 8 estudios primarios.
+
+\begin{thebibliography}{1}
+\bibitem{slr}
+Guidelines for performing Systematic Literature Reviews in Software Engineering
+Barbara Kitchenham, und Stuart Charters. EBSE 2007-001. Keele University and Durham University Joint Report, (2007)
+\bibitem{ref1}
+Combining Model-Driven Engineering and Cloud Computing
+Hugo Bruneliere, Jordi Cabot and Frédéric Jouault AtlanMod, INRIA RBA Center and EMN
+4 rue Alfred Kastler, 44307 Nantes, France
+\bibitem{}
+Model-Driven Engineering for High Performance and CLoud computing
+Ileana Ober, Aniruddha Gokhale, James Hill, Jean-Michel Bruel1, Michael Felderer, David Lugato, and Akshay Dabholkar
+\bibitem{}
+MDE Opportunities in Multi-Tenant Cloud Applications
+Mohammad Abu Matar and Jon Whittle
+Etisalat British Telecom Innovation Center Khalifa University of Science, Technology and Research Abu Dhabi, United Arab Emirates
+\bibitem{}
+Multi‐Cloud Computing Platform Support
+With Model‐Driven Application Runtime Framework
+Nacha Chondamrongkul and Punnarumul Temdee
+School of Information Technology, Mah Fah Luang University Chiang rai, Thailand
+\bibitem{}
+Model-driven specification of adaptive cloud-based systems
+Nagel, B., Gerth, C., Yigitbas, E., Christ, F., Engels, G.
+ 1st International Workshop on Model-Driven Engineering for High Performance and CLoud
+\bibitem{}
+Modelling and comparing cloud computing service level agreements
+Alkandari, F., Paige, R.F.
+ 1st International Workshop on Model-Driven Engineering for High Performance and CLoud
+Computing, MDHPCL 2012 - Satellite Event of MODELS 2012
+\bibitem{}
+An Integrated Meta-model for Cloud Application Security Modelling
+Kyriakos Kritikosa, Philippe Massonet
+ICS-FORTH, Heraklion, Crete, Greece bCETIC, Charleroi, Belgium
+\bibitem{}
+Towards a Model-Driven Solution to the Vendor
+Lock-in Problem in Cloud Computing
+Gabriel Costa Silva (PhD Candidate), Louis M. Rose and Radu Calinescu (Supervisors)
+Department of Computer Science, University of York
+\bibitem{}
+Evolution Feature Oriented Model Driven
+Product Line Engineering Approach for
+Synergistic and Dynamic Service
+Evolution in Clouds:
+A04BPEL3.0 Proposal
+Zhe Wang, Kevin Chalmers,Liu Xiaodong
+School of Computing
+Edinburgh Napier University
+\end{thebibliography}
+
+\end{document}
